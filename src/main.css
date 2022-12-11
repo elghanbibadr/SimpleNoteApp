@@ -29,7 +29,7 @@ img{
     grid-template-rows:50px 50px 1fr;
  }
 
- .note p:last-child {
+ .note__time {
     color: red !important;
  }
 .overlay{
