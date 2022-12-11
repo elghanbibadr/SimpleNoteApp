@@ -8,12 +8,32 @@
     <title>Document</title>
 </head>
 <body >
-    <div >
+   
         <div class="addNoteCard card">
             <img class="addNoteIcon" src="/circle-plus-solid.svg" />
-            <p>Add Note</p>
+            <p >Add Note</p>
         </div>
+       <!-- moduel -->
+       <div class="overlay hidden">
+           <div class="modale">
+            <div class="modale__heading">
+                <p>add a new note</p>
+                <img class="closeIcon" src="/xmark-solid.svg">
+            </div>
+            <form  > 
+               <div class="note-title-box">
+                <label for="title">title</label>
+                <input id='note-title' type="text" placeholder="note title">
+                </div>
+               <div class="note-desc-box">
+                <label for="note-desc">Description</label>
+                <input id='note-desc' type="text" placeholder="note description">
+                </div>
+                <button class="form-btn">add note</button>
+            </form>
+           </div>
+       </div>
 
-    </div>
+    <script src="/main.js"></script>
 </body>
 </html>
