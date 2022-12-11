@@ -36,11 +36,11 @@ form.addEventListener('submit',(e)=>{
 overlay.classList.add('hidden')
   // add the created note to notes
   let note=document.createElement('div');
-  note.classList.add('card')
+  note.classList.add('card','note')
   note.innerHTML=`
-     <h2>${noteItem["note-title"]}</h2>
-     <p>${noteItem["note-desc"]}<p>
-     <p>${noteItem['note-time']}<p>
+     <h2 class='note__title'>${noteItem["note-title"]}</h2>
+     <p class='note__desc'>${noteItem["note-desc"]}<p>
+     <p class='note__time'>${noteItem['note-time']}<p>
      `
     overlay.insertAdjacentElement('beforebegin',note)
 })
